@@ -1,0 +1,47 @@
+.history-left-column {
+    background-color: #fff;
+    height: 566px;
+}
+
+.list-group-item.active {
+    background-color: crimson;
+    border-color: crimson;
+}
+
+time {
+    bottom: 7px;
+    right: 42px;
+}
+
+.history-page .remove {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    color: #2c3131c7;
+    cursor: pointer;
+}
+
+h4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@media (max-width: 991px) {
+    .card {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .card .card-top-image {
+        width: 100%;
+    }
+    .card .card-horizontal time {
+        right: 10px;
+    }
+    .card .card-horizontal .fa-play {
+        right: 48%;
+    }
+}

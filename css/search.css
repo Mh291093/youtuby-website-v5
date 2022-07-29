@@ -1,0 +1,29 @@
+#search-filter-icon {
+    cursor: pointer;
+}
+
+.search-header .filter-column {
+    display: none;
+}
+
+input:checked + span {
+    color: crimson;
+}
+
+time {
+    bottom: 7px;
+    right: 29px;
+}
+
+@media (max-width: 767px) {
+    .card .card-top-image {
+        width: 100%;
+    }
+    .card .card-horizontal time {
+        right: 10px;
+    }
+    .card .card-horizontal .fa-play {
+        right: 48%;
+    }
+}
+

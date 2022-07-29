@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "cairoFont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+body {
+    font-family: "cairoFont", Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+a {
+    color: black;
+    text-decoration: none !important;
+}
+
+button {
+    background-color: transparent !important;
+    color: crimson !important;
+    border-color: crimson !important;
+}
+
+button:hover {
+    background-color: crimson !important;
+    color: #fff !important;
+}
+
+.card .card-horizontal .card-body p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-body {
+    min-width: 0;
+}
+
+#top-menu .bg-light {
+    background-color: #fff !important;
+}
+
+#top-menu .video-icon {
+    background-color: crimson;
+    color: #fff;
+    border-radius: 15%;
+    padding: 2px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: crimson;
+    color: #fff;
+    border-radius: 1%;
+}
+
+.navbar .navbar-nav .active>.nav-link {
+    background-color: crimson;
+    color: #fff;
+    border-radius: 1%;
+}
+
+.navbar .login {
+    color: crimson;
+}
+
+input .form-control:focus, button:focus {
+    box-shadow: none !important;
+}
+
+.card .card-icon {
+    position: relative;
+}
+
+time {
+    position: absolute;
+    bottom: 10px;
+    right: 7px;
+    background-color: black;
+    color: #fff;
+    padding: 0px 3px;
+}
+
+.card .fa-play {
+    position: absolute;
+    top: 43%;
+    right: 46%;
+    display: none;
+    color: #2c3131c7;
+}
+
+.card:hover .fa-play {
+    display: inline;
+}
+
+.card:hover {
+    transform: translateY(-0.9%);
+}
+
+.card {
+    transition: transform 0.5s;
+}
+
+.card .card-body .card-text {
+    height: 30px;
+    overflow: hidden;
+}
+
+#top-menu .fa-bars {
+    cursor: pointer;
+}
+
+.side-bar {
+    position: fixed;
+    z-index: 4;
+    left: -17rem;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.side-bar:hover {
+    overflow-y: scroll;
+}
+
+.red {
+    color: crimson;
+}
+
+.side-bar .list-group-item:hover {
+    color: #fff;
+    background-color: crimson;
+}
+
+.side-bar .list-group-item:hover .red {
+    color: #fff;
+}
+
+.side-bar .list-group-item {
+    width: 17rem;
+}
+
+#wrap.toggled .side-bar {
+    left: 0rem;
+}
+
+.side-bar::-webkit-scrollbar {
+    background-color: rgb(230, 230, 230);
+    width: 8px;
+}
+
+.side-bar::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+}
+
+.layer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+}
+
+.navbar .search-icon {
+    color: crimson;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+    top: 15px;
+    right: 130px;
+    display: none;
+}
+
+.navbar .search-icon:hover {
+    color: #fff;
+    background-color: crimson;
+}
+
+.search-input {
+    position: fixed;
+    top: 72px;
+    padding: 6px 23px;
+    height: 60px;
+    background-color: #efeeee;
+    border: none;
+    display: none;
+    z-index: 1;
+}
+
+.search-input:focus {
+    background-color: #efeeee;
+}
+
+.container-fluid {
+    padding: 0px;
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .navbar .collapse .form-hide {
+        display: none;
+    }
+    .navbar .search-icon {
+        display: inline;
+    }
+}
+
+@media (min-width: 991px) {
+    .search-input {
+        display: none !important;
+    }
+}

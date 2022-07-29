@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTuby | Log</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-6.1.1-web/css/all.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/log.css" />
+  </head>
+  <body class="mt-5">
+    <div class="layer"></div>
+    <div id="top-menu">
+      <div class="container-fluid">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-3"
+        >
+          <i class="fa-solid fa-bars fa-lg pe-2" id="toggler"></i>
+          <b>
+            <a class="navbar-brand" href="index.html"
+              ><span class="video-icon">
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+              YouTuby</a
+            >
+          </b>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link px-3 ms-1" href="index.html"
+                  >Recommended Videos <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 ms-1" href="#">Recently Uploaded</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 ms-1" href="#">Trends</a>
+              </li>
+            </ul>
+            <div class="d-flex my-2 my-lg-0">
+              <input
+                class="form-control me-sm-2 form-hide"
+                type="search"
+                placeholder="Search"
+              />
+              <button
+                onclick="location.href='search.html';"
+                class="btn btn-outline-danger my-2 my-sm-0 form-hide"
+                type="submit"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+          <i class="fas fa-search me-4 search-icon"></i>
+          <a
+            class="nav-link login ms-lg-2 px-3"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            >Log In</a
+          >
+        </nav>
+        <input
+          type="search"
+          class="form-control search-input"
+          placeholder="search for ..."
+        />
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="email" class="col-form-label">Email:</label>
+                    <input type="text" class="form-control" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="col-form-label"
+                      >Password:</label
+                    >
+                    <input type="password" id="password" class="form-control" />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a href="">Forgot Password</a>
+                <a href="" class="mx-auto">Creata an Account</a>
+                <button type="button" class="btn btn-primary">Log In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-4">
+          <div id="wrap">
+            <div class="side-bar">
+              <ul class="list-group list-group-flush ps-0">
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="fas fa-home me-2 red"></i>Home Page</a
+                >
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="fab fa-algolia me-2 red"></i>Recommended Videos</a
+                >
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="far fa-plus-square me-2 red"></i>Recently
+                  Uploaded</a
+                >
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="fas fa-fire-alt me-2 red"></i>Trending Videos</a
+                >
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="fas fa-fire-alt me-2 red"></i>My Videos</a
+                >
+                <a
+                  href="log.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="fas fa-history me-2 red"></i>Watch History</a
+                >
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="far fa-share-square me-2 red"></i>Subscriptions</a
+                >
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="fas fa-film me-2 red"></i>Films</a
+                >
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="fas fa-gamepad me-2 red"></i>Video Games</a
+                >
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="fas fa-graduation-cap me-2 red"></i>Education</a
+                >
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="fas fa-cog me-2 red"></i>Settings</a
+                >
+                <a
+                  href="index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="fas fa-question-circle me-2 red"></i>Help</a
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-page pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 history-left-column">
+            <input
+              type="search"
+              placeholder="history search"
+              class="form-control border-0 my-3"
+            />
+            <hr />
+            <label for="">Type:</label>
+            <div class="list-group list-group-flush pe-0" id="list-tab">
+              <a
+                class="list-group-item list-group-item-action active"
+                id="list-home-list"
+                data-bs-toggle="list"
+                href="#list-home"
+                >Watch History</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-profile-list"
+                data-bs-toggle="list"
+                href="#list-profile"
+                >Search History</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-messages-list"
+                data-bs-toggle="list"
+                href="#list-messages"
+                >Comments</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-settings"
+                >Forum</a
+              >
+              <hr />
+            </div>
+            <label>Date:</label>
+            <div class="list-group list-group-flush pe-0" id="list-tab">
+              <a
+                class="list-group-item list-group-item-action active"
+                id="list-home-list"
+                data-bs-toggle="list"
+                href="#list-home"
+                >24 hours ago</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-profile-list"
+                data-bs-toggle="list"
+                href="#list-profile"
+                >3 days ago</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-messages-list"
+                data-bs-toggle="list"
+                href="#list-messages"
+                >A week ago</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-settings"
+                >A month ago</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card mb-3">
+                    <div class="card-horizontal d-md-flex d-block">
+                      <div class="card-icon">
+                        <a href="watch.html">
+                          <img
+                            class="me-4 card-top-image"
+                            src="img/thumbnail/devtools.jpg"
+                            alt="Card image cap"
+                          />
+                          <time>21:42</time>
+                          <i class="fas fa-play fa-2x"></i>
+                        </a>
+                        <i class="fas fa-times remove"></i>
+                      </div>
+                      <div class="card-body p-2">
+                        <a href="watch.html"><h4>Chrome DevTools</h4></a>
+                        <p>Chrome DevTools Explanation.</p>
+                        <small class="text-muted">
+                          <span class="d-block ps-2"
+                            ><i class="fas fa-film"></i>
+                            <span>1M views</span></span
+                          >
+                          <span class="d-block my-2 ps-2"
+                            ><i class="fas fa-clock"></i>
+                            <span>9 months ago</span></span
+                          >
+                        </small>
+                        <a href="channel.html" class="search-link">
+                          <img
+                            src="img/ch-logo.png"
+                            alt=""
+                            width="30"
+                            class="rounded-circle"
+                          />
+                          <span class="card-text">Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card mb-3">
+                    <div class="card-horizontal d-md-flex d-block">
+                      <div class="card-icon">
+                        <a href="watch.html">
+                          <img
+                            class="me-4 card-top-image"
+                            src="img/thumbnail/mostaql2.png"
+                            alt=""
+                          />
+                          <time>17:54</time>
+                          <i class="fas fa-play fa-2x"></i>
+                        </a>
+                        <i class="fas fa-times remove"></i>
+                      </div>
+                      <div class="card-body p-2">
+                        <a href="watch.html"><h4>Mostaql website</h4></a>
+                        <p>how to gain money as a freelancer in Mostaql.</p>
+                        <small class="text-muted">
+                          <span class="d-block ps-2"
+                            ><i class="fas fa-film"></i>
+                            <span>900 views</span></span
+                          >
+                          <span class="d-block my-2 ps-2"
+                            ><i class="fas fa-clock"></i>
+                            <span>4 months ago</span></span
+                          >
+                        </small>
+                        <a href="channel.html" class="search-link">
+                          <img
+                            src="img/mostaql.png"
+                            alt=""
+                            width="30"
+                            class="rounded-circle"
+                          />
+                          <span class="card-text">Mostaql</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card mb-3">
+                    <div class="card-horizontal d-md-flex d-block">
+                      <div class="card-icon">
+                        <a href="watch.html">
+                          <img
+                            class="me-4 card-top-image"
+                            src="img/thumbnail/khamsat3.png"
+                            alt=""
+                          />
+                          <time>08:19</time>
+                          <i class="fas fa-play fa-2x"></i>
+                        </a>
+                        <i class="fas fa-times remove"></i>
+                      </div>
+                      <div class="card-body p-2">
+                        <a href="watch.html"><h4>Khamsat website</h4></a>
+                        <p>How to register on khamsat website.</p>
+                        <small class="text-muted">
+                          <span class="d-block ps-2"
+                            ><i class="fas fa-film"></i>
+                            <span>200 views</span></span
+                          >
+                          <span class="d-block my-2 ps-2"
+                            ><i class="fas fa-clock"></i>
+                            <span>5 days ago</span></span
+                          >
+                        </small>
+                        <a href="channel.html" class="search-link">
+                          <img
+                            src="img/khamsat.jpg"
+                            alt=""
+                            width="30"
+                            class="rounded-circle"
+                          />
+                          <span class="card-text">Khamsat</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card mb-3">
+                    <div class="card-horizontal d-md-flex d-block">
+                      <div class="card-icon">
+                        <a href="watch.html">
+                          <img
+                            class="me-4 card-top-image"
+                            src="img/thumbnail/frontend.jpg"
+                            alt=""
+                          />
+                          <time>12:37</time>
+                          <i class="fas fa-play fa-2x"></i>
+                        </a>
+                        <i class="fas fa-times remove"></i>
+                      </div>
+                      <div class="card-body p-2">
+                        <a href="watch.html"><h4>FrontEnd Web Developer</h4></a>
+                        <p>
+                          FrontEnd web developer full course from zero to hero.
+                        </p>
+                        <small class="text-muted">
+                          <span class="d-block ps-2"
+                            ><i class="fas fa-film"></i>
+                            <span>200k views</span></span
+                          >
+                          <span class="d-block my-2 ps-2"
+                            ><i class="fas fa-clock"></i>
+                            <span>4 months ago</span></span
+                          >
+                        </small>
+                        <a href="channel.html" class="search-link">
+                          <img
+                            src="img/ch-logo.png"
+                            alt=""
+                            width="30"
+                            class="rounded-circle"
+                          />
+                          <span class="card-text">Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card mb-3">
+                    <div class="card-horizontal d-md-flex d-block">
+                      <div class="card-icon">
+                        <a href="watch.html">
+                          <img
+                            class="me-4 card-top-image"
+                            src="img/thumbnail/khamsat1.png"
+                            alt=""
+                          />
+                          <time>18:26</time>
+                          <i class="fas fa-play fa-2x"></i>
+                        </a>
+                        <i class="fas fa-times remove"></i>
+                      </div>
+                      <div class="card-body p-2">
+                        <a href="watch.html"><h4>Khamsat freelancing</h4></a>
+                        <p>How to inroduce your skills in khamsat website.</p>
+                        <small class="text-muted">
+                          <span class="d-block ps-2"
+                            ><i class="fas fa-film"></i>
+                            <span>500 views</span></span
+                          >
+                          <span class="d-block my-2 ps-2"
+                            ><i class="fas fa-clock"></i>
+                            <span>2 months ago</span></span
+                          >
+                        </small>
+                        <a href="channel.html" class="search-link">
+                          <img
+                            src="img/khamsat.jpg"
+                            alt=""
+                            width="30"
+                            class="rounded-circle"
+                          />
+                          <span class="card-text">Khamsat</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card mb-3">
+                    <div class="card-horizontal d-md-flex d-block">
+                      <div class="card-icon">
+                        <a href="watch.html">
+                          <img
+                            class="me-4 card-top-image"
+                            src="img/thumbnail/mostaql.png"
+                            alt=""
+                          />
+                          <time>16:07</time>
+                          <i class="fas fa-play fa-2x"></i>
+                        </a>
+                        <i class="fas fa-times remove"></i>
+                      </div>
+                      <div class="card-body p-2">
+                        <a href="watch.html"><h4>Mostaql freelancing</h4></a>
+                        <p>How to inroduce your skills in mostaql website.</p>
+                        <small class="text-muted">
+                          <span class="d-block ps-2"
+                            ><i class="fas fa-film"></i>
+                            <span>1k views</span></span
+                          >
+                          <span class="d-block my-2 ps-2"
+                            ><i class="fas fa-clock"></i>
+                            <span>year ago</span></span
+                          >
+                        </small>
+                        <a href="channel.html" class="search-link">
+                          <img
+                            src="img/mostaql.png"
+                            alt=""
+                            width="30"
+                            class="rounded-circle"
+                          />
+                          <span class="card-text">Mostaql</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card mb-3">
+                    <div class="card-horizontal d-md-flex d-block">
+                      <div class="card-icon">
+                        <a href="watch.html">
+                          <img
+                            class="me-4 card-top-image"
+                            src="img/thumbnail/php.jpg"
+                            alt=""
+                          />
+                          <time>22:39</time>
+                          <i class="fas fa-play fa-2x"></i>
+                        </a>
+                        <i class="fas fa-times remove"></i>
+                      </div>
+                      <div class="card-body p-2">
+                        <a href="watch.html"><h4>PHP Web Developer</h4></a>
+                        <p>Mastery PHP Web Developer course for beginners.</p>
+                        <small class="text-muted">
+                          <span class="d-block ps-2"
+                            ><i class="fas fa-film"></i>
+                            <span>1.6M views</span></span
+                          >
+                          <span class="d-block my-2 ps-2"
+                            ><i class="fas fa-clock"></i>
+                            <span>9 months ago</span></span
+                          >
+                        </small>
+                        <a href="channel.html" class="search-link">
+                          <img
+                            src="img/ch-logo.png"
+                            alt=""
+                            width="30"
+                            class="rounded-circle"
+                          />
+                          <span class="card-text">Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/log.js"></script>
+  </body>
+</html>
